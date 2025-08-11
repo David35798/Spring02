@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: ex02-app
-      image: belokana/ex02-app:latest
+      image: david35798/ex02-app:latest
       ports:
         - containerPort: 8081
