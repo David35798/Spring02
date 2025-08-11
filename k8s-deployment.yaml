@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ex02-app
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  source:
+    path: charts/ex02-app
+    repoURL: https://github.com/david35798/Spring02.git
+    targetRevision: main
+  sources: []
+  project: default
